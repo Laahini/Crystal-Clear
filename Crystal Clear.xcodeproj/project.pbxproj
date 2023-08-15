@@ -13,6 +13,7 @@
 		100E706B2A8BE8CC00D4570B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 100E706A2A8BE8CC00D4570B /* Preview Assets.xcassets */; };
 		100E706D2A8BE8CC00D4570B /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100E706C2A8BE8CC00D4570B /* Persistence.swift */; };
 		100E70702A8BE8CC00D4570B /* Crystal_Clear.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 100E706E2A8BE8CC00D4570B /* Crystal_Clear.xcdatamodeld */; };
+		10ED238B2A8BFAD600DE9BF9 /* signIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10ED238A2A8BFAD600DE9BF9 /* signIn.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		100E706A2A8BE8CC00D4570B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		100E706C2A8BE8CC00D4570B /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		100E706F2A8BE8CC00D4570B /* Crystal_Clear.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Crystal_Clear.xcdatamodel; sourceTree = "<group>"; };
+		10ED238A2A8BFAD600DE9BF9 /* signIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signIn.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 			children = (
 				100E70632A8BE8C600D4570B /* Crystal_ClearApp.swift */,
 				100E70652A8BE8C600D4570B /* ContentView.swift */,
+				10ED238A2A8BFAD600DE9BF9 /* signIn.swift */,
 				100E70672A8BE8CC00D4570B /* Assets.xcassets */,
 				100E706C2A8BE8CC00D4570B /* Persistence.swift */,
 				100E706E2A8BE8CC00D4570B /* Crystal_Clear.xcdatamodeld */,
@@ -146,6 +149,7 @@
 				100E706D2A8BE8CC00D4570B /* Persistence.swift in Sources */,
 				100E70662A8BE8C600D4570B /* ContentView.swift in Sources */,
 				100E70702A8BE8CC00D4570B /* Crystal_Clear.xcdatamodeld in Sources */,
+				10ED238B2A8BFAD600DE9BF9 /* signIn.swift in Sources */,
 				100E70642A8BE8C600D4570B /* Crystal_ClearApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
