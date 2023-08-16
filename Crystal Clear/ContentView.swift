@@ -19,31 +19,25 @@ struct ContentView: View {
                         .font(.system(size: 45))
                     Text("Who are you?").font(.system(size: 35))
                     
-                    Button("Volunteers") {
-                        
-                    }.font(.system(size: 36))
-                        .buttonStyle(.borderedProminent)
-                        .tint(Color(hue: 0.609, saturation: 0.834, brightness: 0.568))
-                        .frame(width: 400.0, height: 60)
-                    Spacer()
-                        .frame(height: 30.0)
-                    Button("Organizations")
-                    {
-                        
-                    }.font(.system(size: 36))
-                        .buttonStyle(.borderedProminent)
-                        .tint(Color(hue: 0.609, saturation: 0.834, brightness: 0.568))
-                        .frame(width: 400.0, height: 60)
-                    
+    
                     NavigationLink(destination: signIn())
                     {
-                        Text("volunteers")
+                        Text("  A Volunteer       ")
                             .font(.largeTitle)
+                            .padding()
+                            .background(.mint)
+                            .foregroundColor(.white)
+                            .cornerRadius(10)
                     }
-                    NavigationLink(destination: signIn())
+                    
+                    NavigationLink(destination: signInOrganization())
                     {
-                        Text("orgs")
+                        Text("An Organization")
                             .font(.largeTitle)
+                            .padding()
+                            .background(.mint)
+                            .foregroundColor(.white)
+                            .cornerRadius(10)
                     }
                 
                     

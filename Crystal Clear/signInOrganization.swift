@@ -1,45 +1,45 @@
 //
-//  signInVolenteer.swift
+//  signInOrganization.swift
 //  Crystal Clear
 //
-//  Created by Laahini Addagatla on 8/15/23.
+//  Created by rishika on 8/16/23.
 //
 
 import SwiftUI
 
-struct signIn: View {
-    @State private var firstName = ""
-    @State private var lastName = ""
-    @State private var emailAddress = ""
+struct signInOrganization: View {
+    @State private var nonProfitName = ""
+    @State private var taxNumberEIN = ""
+    @State private var emailAddressOrganization = ""
     var body: some View {
         VStack{
-            Text("Volenteer Sign Up")
+            Text("Organization Sign Up")
                 .padding()
-            .font(.system(size: 45))
+            .font(.system(size: 40))
             HStack{
-                    TextField("First Name", text: $firstName)
+                    TextField("Nonprofit Name", text: $nonProfitName)
                         .multilineTextAlignment(.center)
                         .font(.body)
                         .frame(width: 150.0)
                         .border(Color.mint, width: 3)
                         .padding()
-                    TextField("Last Name", text: $lastName)
+                    TextField("EIN Number", text: $taxNumberEIN)
                         .multilineTextAlignment(.center)
                         .font(.body)
                         .frame(width: 150.0)
                         .border(Color.mint, width: 3)
                         .padding()
             }
-            TextField("Email Address", text: $emailAddress)
+            TextField("Email Address", text: $emailAddressOrganization)
                 .multilineTextAlignment(.center)
                 .font(.body)
                 .frame(width: 300.0)
                 .border(Color.mint, width: 3)
                 .padding()
             
-            NavigationLink(destination: topics())
+            NavigationLink(destination: aboutOrganization())
             {
-                Text("Submit")
+                Text("Submit Information")
                     .font(.largeTitle)
                     .padding()
                     .background(.mint)
@@ -47,13 +47,12 @@ struct signIn: View {
                     .cornerRadius(10)
             }
 
-                
         }
     }
 }
 
-struct signIn_Previews: PreviewProvider {
+struct signInOrganization_Previews: PreviewProvider {
     static var previews: some View {
-        signIn()
+        signInOrganization()
     }
 }
