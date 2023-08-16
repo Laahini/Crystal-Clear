@@ -18,6 +18,8 @@
 		4F09AF102A8D1283002C8F3D /* topics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F09AF0F2A8D1283002C8F3D /* topics.swift */; };
 		4F09AF122A8D1298002C8F3D /* aboutOrganization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F09AF112A8D1298002C8F3D /* aboutOrganization.swift */; };
 		4F09AF142A8D26CB002C8F3D /* orgProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F09AF132A8D26CB002C8F3D /* orgProfile.swift */; };
+		4F09AF162A8D48C0002C8F3D /* makeProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F09AF152A8D48C0002C8F3D /* makeProject.swift */; };
+		4F09AF182A8D4CC7002C8F3D /* projectDashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F09AF172A8D4CC7002C8F3D /* projectDashboard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,8 @@
 		4F09AF0F2A8D1283002C8F3D /* topics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = topics.swift; sourceTree = "<group>"; };
 		4F09AF112A8D1298002C8F3D /* aboutOrganization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aboutOrganization.swift; sourceTree = "<group>"; };
 		4F09AF132A8D26CB002C8F3D /* orgProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = orgProfile.swift; sourceTree = "<group>"; };
+		4F09AF152A8D48C0002C8F3D /* makeProject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = makeProject.swift; sourceTree = "<group>"; };
+		4F09AF172A8D4CC7002C8F3D /* projectDashboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = projectDashboard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +74,8 @@
 				4F09AF0D2A8D0EEF002C8F3D /* signInOrganization.swift */,
 				4F09AF112A8D1298002C8F3D /* aboutOrganization.swift */,
 				4F09AF132A8D26CB002C8F3D /* orgProfile.swift */,
+				4F09AF172A8D4CC7002C8F3D /* projectDashboard.swift */,
+				4F09AF152A8D48C0002C8F3D /* makeProject.swift */,
 				10ED238A2A8BFAD600DE9BF9 /* signIn.swift */,
 				4F09AF0F2A8D1283002C8F3D /* topics.swift */,
 				100E70672A8BE8CC00D4570B /* Assets.xcassets */,
@@ -161,6 +167,8 @@
 				100E706D2A8BE8CC00D4570B /* Persistence.swift in Sources */,
 				100E70662A8BE8C600D4570B /* ContentView.swift in Sources */,
 				4F09AF142A8D26CB002C8F3D /* orgProfile.swift in Sources */,
+				4F09AF182A8D4CC7002C8F3D /* projectDashboard.swift in Sources */,
+				4F09AF162A8D48C0002C8F3D /* makeProject.swift in Sources */,
 				4F09AF122A8D1298002C8F3D /* aboutOrganization.swift in Sources */,
 				4F09AF0E2A8D0EEF002C8F3D /* signInOrganization.swift in Sources */,
 				100E70702A8BE8CC00D4570B /* Crystal_Clear.xcdatamodeld in Sources */,

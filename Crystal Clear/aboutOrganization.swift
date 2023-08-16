@@ -6,21 +6,24 @@
 //
 
 import SwiftUI
-
+class aboutOrg: ObservableObject {
+    @Published var mission = ""
+    @Published var motto = ""
+}
 struct aboutOrganization: View {
-    @State private var mission = ""
-    @State private var motto = ""
+    @StateObject var orgInfo = aboutOrg()
+
     var body: some View {
         VStack{
             Text("Welcome to Crystal!")
                 .font(.system(size: 40))
-            TextField("Mission", text: $mission)
+            TextField("Mission", text: $orgInfo.mission)
                 .multilineTextAlignment(.center)
                 .font(.body)
 //                .lineLimit(5, reservesSpace: true)
                 .border(Color.mint, width: 3)
                 .padding()
-            TextField("Motto", text: $motto)
+            TextField("Motto", text: $orgInfo.motto)
                 .multilineTextAlignment(.center)
                 .font(.body)
                 .border(Color.mint, width: 3)
@@ -46,12 +49,7 @@ struct aboutOrganization: View {
                     .foregroundColor(.white)
                     .cornerRadius(10)
             }
-            NavigationLink(destination: orgProfile())
-            {
-                Text("+")
-                    .font(.largeTitle)
-                    .padding()
-            }
+            
             
         }
     }

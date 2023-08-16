@@ -8,10 +8,37 @@
 import SwiftUI
 
 struct orgProfile: View {
+    @EnvironmentObject var : aboutOrg()
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        NavigationStack {
+            VStack{
+                Text(mission)
+            }
+            .toolbar {
+                ToolbarItemGroup(placement:.status) {
+                    NavigationLink(destination:orgProfile()) {
+                        Text("Profile")
+                    }
+                }
+                ToolbarItemGroup(placement:.status) {
+                    NavigationLink(destination: projectDashboard()) {
+                        Text("Projects")
+                    }
+                }
+                ToolbarItemGroup(placement:.status) {
+                    NavigationLink(destination: makeProject()) {
+                        Text("+")
+                            .font(.system(size:40))
+                            .fontWeight(.black)
+                    }
+                }
+            }
+        }
+      }
     }
-}
+
 
 struct orgProfile_Previews: PreviewProvider {
     static var previews: some View {
