@@ -10,7 +10,32 @@ import SwiftUI
 struct projectDashboard: View {
     var body: some View {
         VStack {
-            Color.green
+            ZStack
+            {
+                Rectangle()
+                VStack
+                {
+                    Text("Past Projects")
+                        .font(.largeTitle)
+                        .foregroundColor(Color.white)
+                        .multilineTextAlignment(.leading)
+                }
+            }
+            .frame(height: 300.0)
+            ZStack
+            {
+                Rectangle()
+                VStack
+                {
+                    Text("Current Projects")
+                        .font(.largeTitle)
+                        .foregroundColor(Color.white)
+                        .multilineTextAlignment(.leading)
+                }
+            }
+            .frame(height: 300.0)
+            
+            
         }
     }
 }

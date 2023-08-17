@@ -13,28 +13,28 @@ struct orgProfile: View {
         VStack
         {
             Text("Name of Org").font(.largeTitle)
-            Image("bkg").clipShape(Circle())
+            Image("bkg").clipShape(Circle()).frame(width:130, height:130).padding()
             ZStack
             {
-                Rectangle().fill(.red).padding().frame(height:300)
+                Rectangle().fill(.red).padding().frame(height:200)
                 VStack
                 {
                     Text("\"Motto statemment\"").font(.title)
-                    Text("Mission statemment goes here").font(.title).padding()
+                    Text("Mission statemment goes here").font(.body).padding()
                 }
             }
             ZStack
             {
-                Rectangle().fill(.red).padding().frame(height:100)
+                Rectangle().fill(.blue).padding().frame(height:100)
                 VStack
                 {
-                    Text("Type goes here").font(.title)
+                    Text("Org Type goes here").font(.title)
                 }
             }
             NavigationLink(destination: editOrganization())
             {
                 Text("Edit Profile")
-                    .font(.largeTitle)
+                    .font(.largeTitle).frame(width:325)
                     .padding()
                     .background(.mint)
                     .foregroundColor(.white)
