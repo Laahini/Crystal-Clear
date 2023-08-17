@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct orgProfile: View {
+    @ObservedObject var viewModel: OrganizationInfoViewModel
+    var orgInfo: OrganizationInfo
     var body: some View {
         
         VStack
@@ -19,8 +21,8 @@ struct orgProfile: View {
                 Rectangle().fill(.red).padding().frame(height:200)
                 VStack
                 {
-                    Text("\"Motto statemment\"").font(.title)
-                    Text("Mission statemment goes here").font(.body).padding()
+                    Text("\(orgInfo.motto)").font(.title)
+                    Text("\(orgInfo.mission)").font(.body).padding()
                 }
             }
             ZStack
@@ -31,7 +33,7 @@ struct orgProfile: View {
                     Text("Org Type goes here").font(.title)
                 }
             }
-            NavigationLink(destination: editOrganization())
+            NavigationLink(destination: editOrganization(viewModel: OrganizationInfoViewModel()))
             {
                 Text("Edit Profile")
                     .font(.largeTitle).frame(width:325)
@@ -47,6 +49,8 @@ struct orgProfile: View {
 
 struct orgProfile_Previews: PreviewProvider {
     static var previews: some View {
-        orgProfile().environmentObject(aboutOrg())
+        let viewModel = OrganizationInfoViewModel() // Create an instance of the ViewModel
+        let orgInfo = OrganizationInfo(mission: "John", motto: "john@example.com") // Create an instance of UserData
+        return orgProfile(viewModel: viewModel, orgInfo: orgInfo)
     }
 }

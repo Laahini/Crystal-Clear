@@ -6,25 +6,38 @@
 //
 
 import SwiftUI
-class aboutOrg: ObservableObject
-{
-    @Published var mission = ""
-    @Published var motto = ""
-}
+
 struct editOrganization: View {
+    @ObservedObject var viewModel: OrganizationInfoViewModel
     
-    @StateObject var orgInfo = aboutOrg()
 
     var body: some View {
+        
         VStack {
             Text("Edit Your Account").font(.system(size: 40))
-            TextField("Mission", text: $orgInfo.mission)
+            
+            ZStack{
+                Image("bkg")
+                    .clipShape(Circle())
+                    .frame(width:130, height:130)
+                    .padding()
+                NavigationLink(destination: ImagePicker(viewModel: OrganizationInfoViewModel()))
+                {
+                    Text("+")
+                        .font(.largeTitle)
+                        .padding()
+                        .foregroundColor(.white)
+
+                }
+            }
+            
+            TextField("Mission", text: $viewModel.orgInfo.mission)
                 .multilineTextAlignment(.center)
                 .font(.body)
                 .frame(width: 300.0, height: 40.0)
                 .border(Color.mint, width: 3)
                 .padding()
-            TextField("Motto", text: $orgInfo.motto)
+            TextField("Motto", text: $viewModel.orgInfo.motto)
                 .multilineTextAlignment(.center)
                 .font(.body)
                 .frame(width: 300.0, height: 40.0)
@@ -44,7 +57,18 @@ struct editOrganization: View {
                     Text("Woman's Health").tag(6)
                 }
             }
-            NavigationLink(destination: orgLanding())
+            
+            NavigationLink(destination: makeProject())
+            {
+                Text("Add Project +")
+                    .font(.largeTitle)
+                    .padding()
+                    .background(.mint)
+                    .foregroundColor(.white)
+                    .cornerRadius(10)
+            }
+            
+            NavigationLink(destination: orgProfile(viewModel: OrganizationInfoViewModel(), orgInfo:viewModel.orgInfo))
             {
                 Text("Finish")
                     .font(.largeTitle)
@@ -57,8 +81,8 @@ struct editOrganization: View {
     }
 }
 
-struct aboutOrganization_Previews: PreviewProvider {
+struct editOrganization_Previews: PreviewProvider {
     static var previews: some View {
-        editOrganization()
+        editOrganization(viewModel: OrganizationInfoViewModel())
     }
 }

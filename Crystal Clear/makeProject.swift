@@ -9,6 +9,8 @@ import SwiftUI
 
 struct makeProject: View {
     @State private var projectName = ""
+    @State var items: [ProjectItem] = []
+    @State private var showNewProject = false
     
     var body: some View {
         VStack
@@ -22,17 +24,21 @@ struct makeProject: View {
                 .padding()
             DatePicker(selection: .constant(Date()), label: { Text("End Date") }).frame(width: 350.0, height: 40.0).padding()
             
+            Button(action: {
+                self.showNewProject = true
+            }) {
+                Text("+")
+            }
             
-            //ADD ITEMS BUTTON PLUS LIST GOES HERE
             
-            NavigationLink(destination: editOrganization())
-            {
-                Text("Create Project")
-                    .font(.largeTitle)
-                    .padding()
-                    .background(.mint)
-                    .foregroundColor(.white)
-                    .cornerRadius(10)
+            List {
+                ForEach(items) { item in
+                        Text(item.title)
+                    }
+                }
+            
+            if showNewProject {
+                NewProjectItemView(title: "", items: $items, showNewProject: $showNewProject)
             }
         }
     }

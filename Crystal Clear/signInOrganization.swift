@@ -34,7 +34,7 @@ struct signInOrganization: View {
                 .frame(width: 300.0, height: 40.0)
                 .border(Color.mint, width: 3)
                 .padding()
-            NavigationLink(destination: editOrganization())
+            NavigationLink(destination: editOrganization(viewModel: OrganizationInfoViewModel()))
             {
                 Text("Submit Information")
                     .font(.largeTitle)

@@ -17,7 +17,7 @@ struct topics: View {
             Text("What are you interested in helping?")
                 .font(.system(size: 40))
             HStack{
-                NavigationLink(destination: editOrganization())
+                NavigationLink(destination: editOrganization(viewModel: OrganizationInfoViewModel()))
                 {
                     Text("Animals")
                         .font(.title)
@@ -27,7 +27,7 @@ struct topics: View {
                         .foregroundColor(.white)
                         .cornerRadius(2)
                 }
-                NavigationLink(destination: editOrganization())
+                NavigationLink(destination: editOrganization(viewModel: OrganizationInfoViewModel()))
                 {
                     Text("Education")
                         .font(.title)
@@ -39,7 +39,7 @@ struct topics: View {
                 }
             }
             HStack{
-                NavigationLink(destination: editOrganization())
+                NavigationLink(destination: editOrganization(viewModel: OrganizationInfoViewModel()))
                 {
                     Text("Environment")
                         .font(.title)
@@ -48,7 +48,7 @@ struct topics: View {
                         .background(.mint)
                         .foregroundColor(.white)
                         .cornerRadius(2)
-                    NavigationLink(destination: editOrganization())
+                    NavigationLink(destination: editOrganization(viewModel: OrganizationInfoViewModel()))
                     {
                         Text("Food Scarcity")
                             .font(.title)
@@ -61,7 +61,7 @@ struct topics: View {
                 }
             }
             HStack{
-                NavigationLink(destination: editOrganization())
+                NavigationLink(destination: editOrganization(viewModel: OrganizationInfoViewModel()))
                 {
                     Text("Woman's Health")
                         .font(.title)
@@ -71,7 +71,7 @@ struct topics: View {
                         .foregroundColor(.white)
                         .cornerRadius(2)
                 }
-                NavigationLink(destination: editOrganization())
+                NavigationLink(destination: editOrganization(viewModel: OrganizationInfoViewModel()))
                 {
                     Text("Children")
                         .font(.title)
