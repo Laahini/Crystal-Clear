@@ -4,11 +4,13 @@
 //
 //  Created by rishika on 8/16/23.
 //
-
+import PhotosUI
 import SwiftUI
 
 struct editOrganization: View {
     @ObservedObject var viewModel: OrganizationInfoViewModel
+    @State private var avatarItem: PhotosPickerItem?
+    @State private var avatarImage: Image?
     
 
     var body: some View {
@@ -21,13 +23,29 @@ struct editOrganization: View {
                     .clipShape(Circle())
                     .frame(width:130, height:130)
                     .padding()
-                NavigationLink(destination: ImagePicker(viewModel: OrganizationInfoViewModel()))
-                {
-                    Text("+")
-                        .font(.largeTitle)
-                        .padding()
-                        .foregroundColor(.white)
+            
+                PhotosPicker("+", selection: $avatarItem, matching: .images)
 
+                if let avatarImage {
+                    avatarImage
+                        .resizable()
+                        .scaledToFit()
+                        .clipShape(Circle())
+                      
+
+                }
+            }
+            .onChange(of: avatarItem) { _ in
+                Task {
+                    if let data = try? await avatarItem?.loadTransferable(type: Data.self) {
+                        if let uiImage = UIImage(data: data) {
+                            avatarImage = Image(uiImage: uiImage)
+                            let profileImage = avatarItem
+                            return
+                        }
+                    }
+
+                    print("Failed")
                 }
             }
             

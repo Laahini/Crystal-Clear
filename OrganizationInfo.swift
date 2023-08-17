@@ -11,6 +11,7 @@ struct OrganizationInfo {
     var mission: String = ""
     var motto: String = ""
     var profileImage: String =  ""
+    var orgType: String = ""
     // other properties as needed
 }
 
