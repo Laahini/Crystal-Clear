@@ -13,11 +13,13 @@
 		100E706B2A8BE8CC00D4570B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 100E706A2A8BE8CC00D4570B /* Preview Assets.xcassets */; };
 		100E706D2A8BE8CC00D4570B /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100E706C2A8BE8CC00D4570B /* Persistence.swift */; };
 		100E70702A8BE8CC00D4570B /* Crystal_Clear.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 100E706E2A8BE8CC00D4570B /* Crystal_Clear.xcdatamodeld */; };
-		10ED238B2A8BFAD600DE9BF9 /* signIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10ED238A2A8BFAD600DE9BF9 /* signIn.swift */; };
+		109D0A9A2A8DCD71009CAA7C /* orgProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109D0A992A8DCD71009CAA7C /* orgProfile.swift */; };
+		109D0A9C2A8DD448009CAA7C /* learn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109D0A9B2A8DD448009CAA7C /* learn.swift */; };
+		10ED238B2A8BFAD600DE9BF9 /* signInVolunteer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10ED238A2A8BFAD600DE9BF9 /* signInVolunteer.swift */; };
 		4F09AF0E2A8D0EEF002C8F3D /* signInOrganization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F09AF0D2A8D0EEF002C8F3D /* signInOrganization.swift */; };
 		4F09AF102A8D1283002C8F3D /* topics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F09AF0F2A8D1283002C8F3D /* topics.swift */; };
-		4F09AF122A8D1298002C8F3D /* aboutOrganization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F09AF112A8D1298002C8F3D /* aboutOrganization.swift */; };
-		4F09AF142A8D26CB002C8F3D /* orgProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F09AF132A8D26CB002C8F3D /* orgProfile.swift */; };
+		4F09AF122A8D1298002C8F3D /* editOrganization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F09AF112A8D1298002C8F3D /* editOrganization.swift */; };
+		4F09AF142A8D26CB002C8F3D /* orgLanding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F09AF132A8D26CB002C8F3D /* orgLanding.swift */; };
 		4F09AF162A8D48C0002C8F3D /* makeProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F09AF152A8D48C0002C8F3D /* makeProject.swift */; };
 		4F09AF182A8D4CC7002C8F3D /* projectDashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F09AF172A8D4CC7002C8F3D /* projectDashboard.swift */; };
 /* End PBXBuildFile section */
@@ -30,11 +32,13 @@
 		100E706A2A8BE8CC00D4570B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		100E706C2A8BE8CC00D4570B /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		100E706F2A8BE8CC00D4570B /* Crystal_Clear.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Crystal_Clear.xcdatamodel; sourceTree = "<group>"; };
-		10ED238A2A8BFAD600DE9BF9 /* signIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signIn.swift; sourceTree = "<group>"; };
+		109D0A992A8DCD71009CAA7C /* orgProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = orgProfile.swift; sourceTree = "<group>"; };
+		109D0A9B2A8DD448009CAA7C /* learn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = learn.swift; sourceTree = "<group>"; };
+		10ED238A2A8BFAD600DE9BF9 /* signInVolunteer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signInVolunteer.swift; sourceTree = "<group>"; };
 		4F09AF0D2A8D0EEF002C8F3D /* signInOrganization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signInOrganization.swift; sourceTree = "<group>"; };
 		4F09AF0F2A8D1283002C8F3D /* topics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = topics.swift; sourceTree = "<group>"; };
-		4F09AF112A8D1298002C8F3D /* aboutOrganization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aboutOrganization.swift; sourceTree = "<group>"; };
-		4F09AF132A8D26CB002C8F3D /* orgProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = orgProfile.swift; sourceTree = "<group>"; };
+		4F09AF112A8D1298002C8F3D /* editOrganization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = editOrganization.swift; sourceTree = "<group>"; };
+		4F09AF132A8D26CB002C8F3D /* orgLanding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = orgLanding.swift; sourceTree = "<group>"; };
 		4F09AF152A8D48C0002C8F3D /* makeProject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = makeProject.swift; sourceTree = "<group>"; };
 		4F09AF172A8D4CC7002C8F3D /* projectDashboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = projectDashboard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -72,11 +76,13 @@
 				100E70632A8BE8C600D4570B /* Crystal_ClearApp.swift */,
 				100E70652A8BE8C600D4570B /* ContentView.swift */,
 				4F09AF0D2A8D0EEF002C8F3D /* signInOrganization.swift */,
-				4F09AF112A8D1298002C8F3D /* aboutOrganization.swift */,
-				4F09AF132A8D26CB002C8F3D /* orgProfile.swift */,
+				10ED238A2A8BFAD600DE9BF9 /* signInVolunteer.swift */,
+				4F09AF112A8D1298002C8F3D /* editOrganization.swift */,
+				4F09AF132A8D26CB002C8F3D /* orgLanding.swift */,
+				109D0A9B2A8DD448009CAA7C /* learn.swift */,
+				109D0A992A8DCD71009CAA7C /* orgProfile.swift */,
 				4F09AF172A8D4CC7002C8F3D /* projectDashboard.swift */,
 				4F09AF152A8D48C0002C8F3D /* makeProject.swift */,
-				10ED238A2A8BFAD600DE9BF9 /* signIn.swift */,
 				4F09AF0F2A8D1283002C8F3D /* topics.swift */,
 				100E70672A8BE8CC00D4570B /* Assets.xcassets */,
 				100E706C2A8BE8CC00D4570B /* Persistence.swift */,
@@ -164,15 +170,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				109D0A9C2A8DD448009CAA7C /* learn.swift in Sources */,
 				100E706D2A8BE8CC00D4570B /* Persistence.swift in Sources */,
 				100E70662A8BE8C600D4570B /* ContentView.swift in Sources */,
-				4F09AF142A8D26CB002C8F3D /* orgProfile.swift in Sources */,
+				4F09AF142A8D26CB002C8F3D /* orgLanding.swift in Sources */,
 				4F09AF182A8D4CC7002C8F3D /* projectDashboard.swift in Sources */,
 				4F09AF162A8D48C0002C8F3D /* makeProject.swift in Sources */,
-				4F09AF122A8D1298002C8F3D /* aboutOrganization.swift in Sources */,
+				4F09AF122A8D1298002C8F3D /* editOrganization.swift in Sources */,
 				4F09AF0E2A8D0EEF002C8F3D /* signInOrganization.swift in Sources */,
 				100E70702A8BE8CC00D4570B /* Crystal_Clear.xcdatamodeld in Sources */,
-				10ED238B2A8BFAD600DE9BF9 /* signIn.swift in Sources */,
+				109D0A9A2A8DCD71009CAA7C /* orgProfile.swift in Sources */,
+				10ED238B2A8BFAD600DE9BF9 /* signInVolunteer.swift in Sources */,
 				100E70642A8BE8C600D4570B /* Crystal_ClearApp.swift in Sources */,
 				4F09AF102A8D1283002C8F3D /* topics.swift in Sources */,
 			);

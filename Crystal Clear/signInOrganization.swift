@@ -11,33 +11,30 @@ struct signInOrganization: View {
     @State private var nonProfitName = ""
     @State private var taxNumberEIN = ""
     @State private var emailAddressOrganization = ""
+    
     var body: some View {
-        VStack{
-            Text("Organization Sign Up")
+        VStack {
+            Text("Organization Sign Up").font(.system(size: 35))
+            
+            TextField("Nonprofit Name", text: $nonProfitName)
+                .multilineTextAlignment(.center)
+                .font(.body)
+                .frame(width: 300.0, height: 40.0)
+                .border(Color.mint, width: 3)
                 .padding()
-            .font(.system(size: 40))
-            HStack{
-                    TextField("Nonprofit Name", text: $nonProfitName)
-                        .multilineTextAlignment(.center)
-                        .font(.body)
-                        .frame(width: 150.0)
-                        .border(Color.mint, width: 3)
-                        .padding()
-                    TextField("EIN Number", text: $taxNumberEIN)
-                        .multilineTextAlignment(.center)
-                        .font(.body)
-                        .frame(width: 150.0)
-                        .border(Color.mint, width: 3)
-                        .padding()
-            }
+            TextField("EIN Number", text: $taxNumberEIN)
+                .multilineTextAlignment(.center)
+                .font(.body)
+                .frame(width: 300.0, height: 40.0)
+                .border(Color.mint, width: 3)
+                .padding()
             TextField("Email Address", text: $emailAddressOrganization)
                 .multilineTextAlignment(.center)
                 .font(.body)
-                .frame(width: 300.0)
+                .frame(width: 300.0, height: 40.0)
                 .border(Color.mint, width: 3)
                 .padding()
-            
-            NavigationLink(destination: aboutOrganization())
+            NavigationLink(destination: editOrganization())
             {
                 Text("Submit Information")
                     .font(.largeTitle)
@@ -45,7 +42,7 @@ struct signInOrganization: View {
                     .background(.mint)
                     .foregroundColor(.white)
                     .cornerRadius(10)
-            }
+            }.padding()
 
         }
     }

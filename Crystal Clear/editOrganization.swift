@@ -6,32 +6,36 @@
 //
 
 import SwiftUI
-class aboutOrg: ObservableObject {
+class aboutOrg: ObservableObject
+{
     @Published var mission = ""
     @Published var motto = ""
 }
-struct aboutOrganization: View {
+struct editOrganization: View {
+    
     @StateObject var orgInfo = aboutOrg()
 
     var body: some View {
-        VStack{
-            Text("Welcome to Crystal!")
-                .font(.system(size: 40))
+        VStack {
+            Text("Edit Your Account").font(.system(size: 40))
             TextField("Mission", text: $orgInfo.mission)
                 .multilineTextAlignment(.center)
                 .font(.body)
-//                .lineLimit(5, reservesSpace: true)
+                .frame(width: 300.0, height: 40.0)
                 .border(Color.mint, width: 3)
                 .padding()
             TextField("Motto", text: $orgInfo.motto)
                 .multilineTextAlignment(.center)
                 .font(.body)
+                .frame(width: 300.0, height: 40.0)
                 .border(Color.mint, width: 3)
                 .padding()
-            HStack{
-                Text("Category")
-                    .font(.system(size: 20))
-                Picker(selection: .constant(1), label: Text("Pick a topic")) {
+                
+            HStack
+            {
+                Text("Category").font(.system(size: 20))
+                Picker(selection: .constant(1), label: Text("Pick a topic"))
+                {
                     Text("Animals").tag(1)
                     Text("Children").tag(2)
                     Text("Education").tag(3)
@@ -40,7 +44,7 @@ struct aboutOrganization: View {
                     Text("Woman's Health").tag(6)
                 }
             }
-            NavigationLink(destination: orgProfile())
+            NavigationLink(destination: orgLanding())
             {
                 Text("Finish")
                     .font(.largeTitle)
@@ -49,16 +53,12 @@ struct aboutOrganization: View {
                     .foregroundColor(.white)
                     .cornerRadius(10)
             }
-            
-            
         }
     }
-    
-    
 }
 
 struct aboutOrganization_Previews: PreviewProvider {
     static var previews: some View {
-        aboutOrganization()
+        editOrganization()
     }
 }

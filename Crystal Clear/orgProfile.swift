@@ -2,46 +2,51 @@
 //  orgProfile.swift
 //  Crystal Clear
 //
-//  Created by rishika on 8/16/23.
+//  Created by Laahini Addagatla on 8/16/23.
 //
 
 import SwiftUI
 
 struct orgProfile: View {
-    @EnvironmentObject var : aboutOrg()
-    
     var body: some View {
         
-        NavigationStack {
-            VStack{
-                Text(mission)
+        VStack
+        {
+            Text("Name of Org").font(.largeTitle)
+            Image("bkg").clipShape(Circle())
+            ZStack
+            {
+                Rectangle().fill(.red).padding().frame(height:300)
+                VStack
+                {
+                    Text("\"Motto statemment\"").font(.title)
+                    Text("Mission statemment goes here").font(.title).padding()
+                }
             }
-            .toolbar {
-                ToolbarItemGroup(placement:.status) {
-                    NavigationLink(destination:orgProfile()) {
-                        Text("Profile")
-                    }
+            ZStack
+            {
+                Rectangle().fill(.red).padding().frame(height:100)
+                VStack
+                {
+                    Text("Type goes here").font(.title)
                 }
-                ToolbarItemGroup(placement:.status) {
-                    NavigationLink(destination: projectDashboard()) {
-                        Text("Projects")
-                    }
-                }
-                ToolbarItemGroup(placement:.status) {
-                    NavigationLink(destination: makeProject()) {
-                        Text("+")
-                            .font(.system(size:40))
-                            .fontWeight(.black)
-                    }
-                }
+            }
+            NavigationLink(destination: editOrganization())
+            {
+                Text("Edit Profile")
+                    .font(.largeTitle)
+                    .padding()
+                    .background(.mint)
+                    .foregroundColor(.white)
+                    .cornerRadius(10)
             }
         }
-      }
+        
     }
-
+}
 
 struct orgProfile_Previews: PreviewProvider {
     static var previews: some View {
-        orgProfile()
+        orgProfile().environmentObject(aboutOrg())
     }
 }

@@ -8,21 +8,18 @@
 import SwiftUI
 
 struct ContentView: View {
-    
     var body: some View {
         NavigationStack {
             ZStack {
-                Image("bkg")
-                    .resizable()
-                VStack {
-                    Text("Hi there!")
-                        .font(.system(size: 45))
+                Image("bkg").resizable()
+                VStack
+                {
+                    Text("Hi there!").font(.system(size: 45))
                     Text("Who are you?").font(.system(size: 35))
                     
-    
-                    NavigationLink(destination: signIn())
+                    NavigationLink(destination: signInVolunteer())
                     {
-                        Text("  A Volunteer       ")
+                        Text(" A Volunteer       ")
                             .font(.largeTitle)
                             .padding()
                             .background(.mint)
@@ -39,16 +36,11 @@ struct ContentView: View {
                             .foregroundColor(.white)
                             .cornerRadius(10)
                     }
-                
-                    
-
                 }
             }.edgesIgnoringSafeArea([.top, .bottom])
         }
         
     }
-    
-    
 }
 
 struct Previews_ContentView_Previews: PreviewProvider {

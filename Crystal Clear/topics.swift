@@ -17,7 +17,7 @@ struct topics: View {
             Text("What are you interested in helping?")
                 .font(.system(size: 40))
             HStack{
-                NavigationLink(destination: aboutOrganization())
+                NavigationLink(destination: editOrganization())
                 {
                     Text("Animals")
                         .font(.title)
@@ -27,7 +27,7 @@ struct topics: View {
                         .foregroundColor(.white)
                         .cornerRadius(2)
                 }
-                NavigationLink(destination: aboutOrganization())
+                NavigationLink(destination: editOrganization())
                 {
                     Text("Education")
                         .font(.title)
@@ -39,7 +39,7 @@ struct topics: View {
                 }
             }
             HStack{
-                NavigationLink(destination: aboutOrganization())
+                NavigationLink(destination: editOrganization())
                 {
                     Text("Environment")
                         .font(.title)
@@ -48,7 +48,7 @@ struct topics: View {
                         .background(.mint)
                         .foregroundColor(.white)
                         .cornerRadius(2)
-                    NavigationLink(destination: aboutOrganization())
+                    NavigationLink(destination: editOrganization())
                     {
                         Text("Food Scarcity")
                             .font(.title)
@@ -61,7 +61,7 @@ struct topics: View {
                 }
             }
             HStack{
-                NavigationLink(destination: aboutOrganization())
+                NavigationLink(destination: editOrganization())
                 {
                     Text("Woman's Health")
                         .font(.title)
@@ -71,7 +71,7 @@ struct topics: View {
                         .foregroundColor(.white)
                         .cornerRadius(2)
                 }
-                NavigationLink(destination: aboutOrganization())
+                NavigationLink(destination: editOrganization())
                 {
                     Text("Children")
                         .font(.title)
