@@ -14,7 +14,7 @@ struct orgProfile: View {
         
         VStack
         {
-            Text("Name of Org").font(.largeTitle)
+            Text("\(orgInfo.motto)").font(.largeTitle)
             Image("bkg").clipShape(Circle()).frame(width:130, height:130).padding()
             ZStack
             {
@@ -30,7 +30,7 @@ struct orgProfile: View {
                 Rectangle().fill(.blue).padding().frame(height:100)
                 VStack
                 {
-                    Text("Org Type goes here").font(.title)
+                    Text("\(orgInfo.orgType)").font(.title)
                 }
             }
             NavigationLink(destination: editOrganization(viewModel: OrganizationInfoViewModel()))

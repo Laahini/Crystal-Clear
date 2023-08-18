@@ -27,7 +27,7 @@ struct ContentView: View {
                             .cornerRadius(10)
                     }
                     
-                    NavigationLink(destination: signInOrganization())
+                    NavigationLink(destination: editOrganization(viewModel: OrganizationInfoViewModel()))
                     {
                         Text("An Organization")
                             .font(.largeTitle)

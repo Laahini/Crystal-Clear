@@ -8,27 +8,25 @@
 import SwiftUI
 
 struct signInOrganization: View {
-    @State private var nonProfitName = ""
-    @State private var taxNumberEIN = ""
-    @State private var emailAddressOrganization = ""
+    @ObservedObject var viewModel: OrganizationInfoViewModel
     
     var body: some View {
         VStack {
             Text("Organization Sign Up").font(.system(size: 35))
             
-            TextField("Nonprofit Name", text: $nonProfitName)
+            TextField("Nonprofit Name", text: $viewModel.orgInfo.motto)
                 .multilineTextAlignment(.center)
                 .font(.body)
                 .frame(width: 300.0, height: 40.0)
                 .border(Color.mint, width: 3)
                 .padding()
-            TextField("EIN Number", text: $taxNumberEIN)
+            TextField("EIN Number", text: $viewModel.orgInfo.taxNumberEIN)
                 .multilineTextAlignment(.center)
                 .font(.body)
                 .frame(width: 300.0, height: 40.0)
                 .border(Color.mint, width: 3)
                 .padding()
-            TextField("Email Address", text: $emailAddressOrganization)
+            TextField("Email Address", text: $viewModel.orgInfo.emailAddressOrganization)
                 .multilineTextAlignment(.center)
                 .font(.body)
                 .frame(width: 300.0, height: 40.0)
@@ -43,6 +41,7 @@ struct signInOrganization: View {
                     .foregroundColor(.white)
                     .cornerRadius(10)
             }.padding()
+            
 
         }
     }
@@ -50,6 +49,6 @@ struct signInOrganization: View {
 
 struct signInOrganization_Previews: PreviewProvider {
     static var previews: some View {
-        signInOrganization()
+        signInOrganization(viewModel: OrganizationInfoViewModel())
     }
 }

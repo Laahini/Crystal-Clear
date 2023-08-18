@@ -6,12 +6,15 @@
 //
 
 import Foundation
+import PhotosUI
 //8
 struct OrganizationInfo {
     var mission: String = ""
     var motto: String = ""
-    var profileImage: String =  ""
     var orgType: String = ""
+    var nonName: String = ""
+    var taxNumberEIN: String = ""
+    var emailAddressOrganization: String = ""
     // other properties as needed
 }
 

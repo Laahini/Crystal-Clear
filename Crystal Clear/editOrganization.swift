@@ -11,7 +11,7 @@ struct editOrganization: View {
     @ObservedObject var viewModel: OrganizationInfoViewModel
     @State private var avatarItem: PhotosPickerItem?
     @State private var avatarImage: Image?
-    
+    let topics = ["Animals", "Children", "Education", "Environment", "Food Scarcity", "Woman's Health"]
 
     var body: some View {
         
@@ -31,8 +31,7 @@ struct editOrganization: View {
                         .resizable()
                         .scaledToFit()
                         .clipShape(Circle())
-                      
-
+                        .frame(width: 300.0, height: 300.0)
                 }
             }
             .onChange(of: avatarItem) { _ in
@@ -40,13 +39,34 @@ struct editOrganization: View {
                     if let data = try? await avatarItem?.loadTransferable(type: Data.self) {
                         if let uiImage = UIImage(data: data) {
                             avatarImage = Image(uiImage: uiImage)
-                            let profileImage = avatarItem
                             return
                         }
                     }
 
                     print("Failed")
                 }
+            }
+            
+            VStack {                
+                TextField("Nonprofit Name", text: $viewModel.orgInfo.motto)
+                    .multilineTextAlignment(.center)
+                    .font(.body)
+                    .frame(width: 300.0, height: 40.0)
+                    .border(Color.mint, width: 3)
+                    .padding()
+                TextField("EIN Number", text: $viewModel.orgInfo.taxNumberEIN)
+                    .multilineTextAlignment(.center)
+                    .font(.body)
+                    .frame(width: 300.0, height: 40.0)
+                    .border(Color.mint, width: 3)
+                    .padding()
+                TextField("Email Address", text: $viewModel.orgInfo.emailAddressOrganization)
+                    .multilineTextAlignment(.center)
+                    .font(.body)
+                    .frame(width: 300.0, height: 40.0)
+                    .border(Color.mint, width: 3)
+                    .padding()
+
             }
             
             TextField("Mission", text: $viewModel.orgInfo.mission)
@@ -65,17 +85,13 @@ struct editOrganization: View {
             HStack
             {
                 Text("Category").font(.system(size: 20))
-                Picker(selection: .constant(1), label: Text("Pick a topic"))
+                Picker(selection: $viewModel.orgInfo.orgType, label: Text("Pick a topic"))
                 {
-                    Text("Animals").tag(1)
-                    Text("Children").tag(2)
-                    Text("Education").tag(3)
-                    Text("Environment").tag(4)
-                    Text("Food Scarcity").tag(5)
-                    Text("Woman's Health").tag(6)
-                }
+                    ForEach(topics, id: \.self){
+                        Text($0)
+                    }
+                }.pickerStyle(.menu)
             }
-            
             NavigationLink(destination: makeProject())
             {
                 Text("Add Project +")
