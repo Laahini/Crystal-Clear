@@ -14,15 +14,14 @@ struct orgProfile: View {
         UIScreen.main.bounds.width
     }
     var body: some View {
-        ZStack {
-            Image("bkg2").resizable()
+        
             VStack
             {
                 Text("\(orgInfo.nonName)").font(.largeTitle)
                 Image("bkg").clipShape(Circle()).frame(width:130, height:130).padding()
                 ZStack
                 {
-                    Rectangle().fill(.red).padding().frame(height:200)
+                    Rectangle().fill(Color.blue).padding().frame(height:200)
                     VStack
                     {
                         Text("\(orgInfo.motto)").font(.title)
@@ -31,7 +30,7 @@ struct orgProfile: View {
                 }
                 ZStack
                 {
-                    Rectangle().fill(.blue).padding().frame(height:100)
+                    Rectangle().fill(Color.blue).padding().frame(height:100)
                     VStack
                     {
                         Text("\(orgInfo.orgType)").font(.title)
@@ -60,7 +59,7 @@ struct orgProfile: View {
                                 
                         }.font(.headline).frame(width: (deviceWidth/2) - 50)
                             .padding(.all, 10.0)
-                            .background(.mint)
+                            .background(Color.blue)
                             .foregroundColor(.white)
                             .cornerRadius(10)
                     }
@@ -79,7 +78,6 @@ struct orgProfile: View {
                     
                 }
             }
-        }
         
     }
 }

@@ -31,7 +31,7 @@ struct learn: View {
                 Text("Learning Hub")
                     .font(.title)
                     .multilineTextAlignment(.center)
-                    .padding(.top, 25.0).position(x: 196, y:80)
+                    .padding(.top, 25.0)
                 HStack (spacing: 5) {
                     ZStack{
                         Rectangle().frame(height: /*@START_MENU_TOKEN@*/100.0/*@END_MENU_TOKEN@*/)
@@ -113,7 +113,7 @@ struct learn: View {
                             .tint(.black)
                             .frame(height: 75)
                     }
-                }.padding(.all, 10.0).position(x: 196, y:10)
+                }.padding(.all, 10.0).position(x: 196, y:60)
                 VStack {
                         if(animalsClicked == true) {
                             Text("Animal Resources")
@@ -283,7 +283,7 @@ struct learn: View {
                     }
                 }.position(x: 196, y:0)
             }
-        }.edgesIgnoringSafeArea([.top, .bottom])
+        }
     }
 }
 

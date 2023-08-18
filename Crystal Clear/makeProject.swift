@@ -16,8 +16,8 @@ struct makeProject: View {
     @State private var showNewProject = false
     
     var body: some View {
-        ZStack {
-            Image("bkg2").resizable()
+
+            
             VStack
             {
                 Text("Let's Make A New Project").font(.title)
@@ -78,7 +78,7 @@ struct makeProject: View {
                     }
                 }
             }
-        }
+        
     }
 }
 
