@@ -11,10 +11,10 @@ struct ContentView: View {
     var body: some View {
         NavigationStack {
             ZStack {
-                Image("bkg").resizable()
+                Image("bkg2").resizable()
                 VStack
                 {
-                    Text("Hi there!").font(.system(size: 45))
+                    Text("Hi there! 👋").font(.system(size: 45)).padding(.bottom, 10.0)
                     Text("Who are you?").font(.system(size: 35))
                     
                     NavigationLink(destination: signInVolunteer())
@@ -22,9 +22,10 @@ struct ContentView: View {
                         Text(" A Volunteer       ")
                             .font(.largeTitle)
                             .padding()
-                            .background(.mint)
+                            .background(Color.blue)
                             .foregroundColor(.white)
                             .cornerRadius(10)
+                            
                     }
                     
                     NavigationLink(destination: editOrganization(viewModel: OrganizationInfoViewModel()))
@@ -32,7 +33,7 @@ struct ContentView: View {
                         Text("An Organization")
                             .font(.largeTitle)
                             .padding()
-                            .background(.mint)
+                            .background(Color.blue)
                             .foregroundColor(.white)
                             .cornerRadius(10)
                     }

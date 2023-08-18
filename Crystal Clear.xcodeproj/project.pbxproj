@@ -20,7 +20,6 @@
 		10ED238B2A8BFAD600DE9BF9 /* signInVolunteer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10ED238A2A8BFAD600DE9BF9 /* signInVolunteer.swift */; };
 		4F09AF102A8D1283002C8F3D /* topics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F09AF0F2A8D1283002C8F3D /* topics.swift */; };
 		4F09AF122A8D1298002C8F3D /* editOrganization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F09AF112A8D1298002C8F3D /* editOrganization.swift */; };
-		4F09AF142A8D26CB002C8F3D /* orgLanding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F09AF132A8D26CB002C8F3D /* orgLanding.swift */; };
 		4F09AF162A8D48C0002C8F3D /* makeProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F09AF152A8D48C0002C8F3D /* makeProject.swift */; };
 		4F09AF182A8D4CC7002C8F3D /* projectDashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F09AF172A8D4CC7002C8F3D /* projectDashboard.swift */; };
 		4F09AF1A2A8E59DE002C8F3D /* ProjectItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F09AF192A8E59DE002C8F3D /* ProjectItem.swift */; };
@@ -43,7 +42,6 @@
 		10ED238A2A8BFAD600DE9BF9 /* signInVolunteer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signInVolunteer.swift; sourceTree = "<group>"; };
 		4F09AF0F2A8D1283002C8F3D /* topics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = topics.swift; sourceTree = "<group>"; };
 		4F09AF112A8D1298002C8F3D /* editOrganization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = editOrganization.swift; sourceTree = "<group>"; };
-		4F09AF132A8D26CB002C8F3D /* orgLanding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = orgLanding.swift; sourceTree = "<group>"; };
 		4F09AF152A8D48C0002C8F3D /* makeProject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = makeProject.swift; sourceTree = "<group>"; };
 		4F09AF172A8D4CC7002C8F3D /* projectDashboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = projectDashboard.swift; sourceTree = "<group>"; };
 		4F09AF192A8E59DE002C8F3D /* ProjectItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectItem.swift; sourceTree = "<group>"; };
@@ -86,7 +84,6 @@
 				100E70652A8BE8C600D4570B /* ContentView.swift */,
 				10ED238A2A8BFAD600DE9BF9 /* signInVolunteer.swift */,
 				4F09AF112A8D1298002C8F3D /* editOrganization.swift */,
-				4F09AF132A8D26CB002C8F3D /* orgLanding.swift */,
 				109D0A9B2A8DD448009CAA7C /* learn.swift */,
 				104B5F082A8F227E0024D4D6 /* volunteerHome.swift */,
 				109D0A992A8DCD71009CAA7C /* orgProfile.swift */,
@@ -188,7 +185,6 @@
 				4F09AF3A2A8E8F1C002C8F3D /* OrganizationInfo.swift in Sources */,
 				4F09AF1C2A8E6582002C8F3D /* NewProjectItemView.swift in Sources */,
 				104B5F072A8F21300024D4D6 /* landing.swift in Sources */,
-				4F09AF142A8D26CB002C8F3D /* orgLanding.swift in Sources */,
 				4F09AF182A8D4CC7002C8F3D /* projectDashboard.swift in Sources */,
 				104B5F092A8F227E0024D4D6 /* volunteerHome.swift in Sources */,
 				4F09AF162A8D48C0002C8F3D /* makeProject.swift in Sources */,

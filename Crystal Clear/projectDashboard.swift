@@ -12,63 +12,66 @@ struct projectDashboard: View {
         UIScreen.main.bounds.width
     }
     var body: some View {
-        VStack {
-            ZStack
-            {
-                Rectangle()
-                VStack
+        ZStack {
+            Image("bkg2").resizable()
+            VStack {
+                ZStack
                 {
-                    Text("Past Projects")
-                        .font(.largeTitle)
-                        .foregroundColor(Color.white)
-                        .multilineTextAlignment(.leading)
-                }
-            }
-            .padding(.top, 50.0)
-            .frame(height: 300.0)
-            ZStack
-            {
-                Rectangle()
-                VStack
-                {
-                    Text("Current Projects")
-                        .font(.largeTitle)
-                        .foregroundColor(Color.white)
-                        .multilineTextAlignment(.leading)
-                }
-            }.padding(.top, 50.0).frame(height: 300.0)
-            Spacer().frame(height: 80.0)
-            ZStack {
-                //Rectangle()
-                HStack(alignment: .bottom, spacing:20) {
-//                    NavigationLink(destination: editOrganization())
-//                    {
-//                        VStack {
-//                            Image(systemName: "phone.fill")
-//                            Text("Profile")
-//
-//                        }.font(.headline).frame(width: (deviceWidth/2) - 50)
-//                            .padding(.all, 10.0)
-//                            .background(.mint)
-//                            .foregroundColor(.white)
-//                            .cornerRadius(10)
-//                    }
-                    NavigationLink(destination: makeProject())
+                    Rectangle()
+                    VStack
                     {
-                        VStack {
-                            Image(systemName: "phone.fill")
-                            Text("New Project")
-                                
-                        }.font(.headline).frame(width: (deviceWidth/2) - 50)
-                            .padding(.all, 10.0)
-                            .background(.mint)
-                            .foregroundColor(.white)
-                            .cornerRadius(10)
+                        Text("Past Projects")
+                            .font(.largeTitle)
+                            .foregroundColor(Color.white)
+                            .multilineTextAlignment(.leading)
                     }
-                    
+                }
+                .padding(.top, 50.0)
+                .frame(height: 300.0)
+                ZStack
+                {
+                    Rectangle()
+                    VStack
+                    {
+                        Text("Current Projects")
+                            .font(.largeTitle)
+                            .foregroundColor(Color.white)
+                            .multilineTextAlignment(.leading)
+                    }
+                }.padding(.top, 50.0).frame(height: 300.0)
+                Spacer().frame(height: 80.0)
+                ZStack {
+                    //Rectangle()
+                    HStack(alignment: .bottom, spacing:20) {
+    //                    NavigationLink(destination: editOrganization())
+    //                    {
+    //                        VStack {
+    //                            Image(systemName: "phone.fill")
+    //                            Text("Profile")
+    //
+    //                        }.font(.headline).frame(width: (deviceWidth/2) - 50)
+    //                            .padding(.all, 10.0)
+    //                            .background(.mint)
+    //                            .foregroundColor(.white)
+    //                            .cornerRadius(10)
+    //                    }
+                        NavigationLink(destination: makeProject())
+                        {
+                            VStack {
+                                Image(systemName: "phone.fill")
+                                Text("New Project")
+                                    
+                            }.font(.headline).frame(width: (deviceWidth/2) - 50)
+                                .padding(.all, 10.0)
+                                .background(Color.blue)
+                                .foregroundColor(.white)
+                                .cornerRadius(10)
+                        }
+                        
+                    }
                 }
             }
-        }
+        }.edgesIgnoringSafeArea([.top, .bottom])
     }
 }
 

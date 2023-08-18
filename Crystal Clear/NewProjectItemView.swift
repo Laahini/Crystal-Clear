@@ -14,6 +14,7 @@ struct NewProjectItemView: View {
     @Binding var showNewProject : Bool
     
     var body: some View{
+        
         VStack{
             Text("Project Item")
                 .font(.title)
