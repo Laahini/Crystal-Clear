@@ -24,6 +24,7 @@ struct projectDashboard: View {
                         .multilineTextAlignment(.leading)
                 }
             }
+            .padding(.top, 50.0)
             .frame(height: 300.0)
             ZStack
             {
@@ -35,8 +36,8 @@ struct projectDashboard: View {
                         .foregroundColor(Color.white)
                         .multilineTextAlignment(.leading)
                 }
-            }.frame(height: 300.0)
-            Spacer().frame(height: 100.0)
+            }.padding(.top, 50.0).frame(height: 300.0)
+            Spacer().frame(height: 80.0)
             ZStack {
                 //Rectangle()
                 HStack(alignment: .bottom, spacing:20) {

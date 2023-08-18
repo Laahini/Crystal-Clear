@@ -13,6 +13,8 @@
 		100E706B2A8BE8CC00D4570B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 100E706A2A8BE8CC00D4570B /* Preview Assets.xcassets */; };
 		100E706D2A8BE8CC00D4570B /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100E706C2A8BE8CC00D4570B /* Persistence.swift */; };
 		100E70702A8BE8CC00D4570B /* Crystal_Clear.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 100E706E2A8BE8CC00D4570B /* Crystal_Clear.xcdatamodeld */; };
+		104B5F072A8F21300024D4D6 /* landing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104B5F062A8F21300024D4D6 /* landing.swift */; };
+		104B5F092A8F227E0024D4D6 /* volunteerHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104B5F082A8F227E0024D4D6 /* volunteerHome.swift */; };
 		109D0A9A2A8DCD71009CAA7C /* orgProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109D0A992A8DCD71009CAA7C /* orgProfile.swift */; };
 		109D0A9C2A8DD448009CAA7C /* learn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109D0A9B2A8DD448009CAA7C /* learn.swift */; };
 		10ED238B2A8BFAD600DE9BF9 /* signInVolunteer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10ED238A2A8BFAD600DE9BF9 /* signInVolunteer.swift */; };
@@ -34,6 +36,8 @@
 		100E706A2A8BE8CC00D4570B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		100E706C2A8BE8CC00D4570B /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		100E706F2A8BE8CC00D4570B /* Crystal_Clear.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Crystal_Clear.xcdatamodel; sourceTree = "<group>"; };
+		104B5F062A8F21300024D4D6 /* landing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = landing.swift; sourceTree = "<group>"; };
+		104B5F082A8F227E0024D4D6 /* volunteerHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = volunteerHome.swift; sourceTree = "<group>"; };
 		109D0A992A8DCD71009CAA7C /* orgProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = orgProfile.swift; sourceTree = "<group>"; };
 		109D0A9B2A8DD448009CAA7C /* learn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = learn.swift; sourceTree = "<group>"; };
 		10ED238A2A8BFAD600DE9BF9 /* signInVolunteer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signInVolunteer.swift; sourceTree = "<group>"; };
@@ -84,12 +88,14 @@
 				4F09AF112A8D1298002C8F3D /* editOrganization.swift */,
 				4F09AF132A8D26CB002C8F3D /* orgLanding.swift */,
 				109D0A9B2A8DD448009CAA7C /* learn.swift */,
+				104B5F082A8F227E0024D4D6 /* volunteerHome.swift */,
 				109D0A992A8DCD71009CAA7C /* orgProfile.swift */,
 				4F09AF172A8D4CC7002C8F3D /* projectDashboard.swift */,
 				4F09AF152A8D48C0002C8F3D /* makeProject.swift */,
 				4F09AF1B2A8E6582002C8F3D /* NewProjectItemView.swift */,
 				4F09AF192A8E59DE002C8F3D /* ProjectItem.swift */,
 				4F09AF0F2A8D1283002C8F3D /* topics.swift */,
+				104B5F062A8F21300024D4D6 /* landing.swift */,
 				100E70672A8BE8CC00D4570B /* Assets.xcassets */,
 				100E706C2A8BE8CC00D4570B /* Persistence.swift */,
 				100E706E2A8BE8CC00D4570B /* Crystal_Clear.xcdatamodeld */,
@@ -181,8 +187,10 @@
 				100E70662A8BE8C600D4570B /* ContentView.swift in Sources */,
 				4F09AF3A2A8E8F1C002C8F3D /* OrganizationInfo.swift in Sources */,
 				4F09AF1C2A8E6582002C8F3D /* NewProjectItemView.swift in Sources */,
+				104B5F072A8F21300024D4D6 /* landing.swift in Sources */,
 				4F09AF142A8D26CB002C8F3D /* orgLanding.swift in Sources */,
 				4F09AF182A8D4CC7002C8F3D /* projectDashboard.swift in Sources */,
+				104B5F092A8F227E0024D4D6 /* volunteerHome.swift in Sources */,
 				4F09AF162A8D48C0002C8F3D /* makeProject.swift in Sources */,
 				4F09AF122A8D1298002C8F3D /* editOrganization.swift in Sources */,
 				4F09AF1A2A8E59DE002C8F3D /* ProjectItem.swift in Sources */,
