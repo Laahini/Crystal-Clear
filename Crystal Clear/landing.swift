@@ -12,11 +12,11 @@ struct landing: View {
         TabView
         {
             volunteerHome().tabItem() {
-                Image(systemName: "phone.fill")
+                Image(systemName: "house.fill")
                 Text("Home")
             }
             learn().tabItem() {
-                Image(systemName: "phone.fill")
+                Image(systemName: "tray.fill")
                 Text("Projects")
             }
         }

@@ -65,7 +65,7 @@ struct makeProject: View {
                         NavigationLink(destination: projectDashboard())
                         {
                             VStack {
-                                Image(systemName: "phone.fill")
+                                Image(systemName: "tray.fill")
                                 Text("Projects")
                                     
                             }.font(.headline).frame(width: (deviceWidth/2) - 50)

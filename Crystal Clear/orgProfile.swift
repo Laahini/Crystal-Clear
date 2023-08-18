@@ -54,7 +54,7 @@ struct orgProfile: View {
                     NavigationLink(destination: makeProject())
                     {
                         VStack {
-                            Image(systemName: "phone.fill")
+                            Image(systemName: "plus")
                             Text("New Project")
                                 
                         }.font(.headline).frame(width: (deviceWidth/2) - 50)
@@ -66,7 +66,7 @@ struct orgProfile: View {
                     NavigationLink(destination: projectDashboard())
                     {
                         VStack {
-                            Image(systemName: "phone.fill")
+                            Image(systemName: "tray.fill")
                             Text("Projects")
                                 
                         }.font(.headline).frame(width: (deviceWidth/2) - 50)
