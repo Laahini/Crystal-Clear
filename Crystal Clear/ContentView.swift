@@ -8,12 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
+    var deviceWidth: CGFloat {
+        UIScreen.main.bounds.width
+    }
     var body: some View {
         NavigationStack {
             ZStack {
                 Image("bkg2").resizable()
                 VStack
                 {
+                    Image("crystal").resizable(resizingMode: .stretch).aspectRatio(contentMode: .fit).frame(width: deviceWidth)
                     Text("Hi there! 👋").font(.system(size: 45)).padding(.bottom, 10.0)
                     Text("Who are you?").font(.system(size: 35))
                     

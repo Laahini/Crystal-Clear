@@ -33,10 +33,10 @@ struct volunteerHome: View {
                     Rectangle()
                         .fill(Color(red: -0.002, green: 0.479, blue: 0.999)).padding(.all, 20.0).cornerRadius(20)
                     VStack{
-                        Text("Books Buddies")
+                        Text("Ramadan Food Drive")
                             .font(.title)
-                        Text("By: Books for Fun")
-                        Text("Become a bookworm! We are looking for children books including picture books and chapter books from common series.")
+                        Text("By: Generous Kitchen")
+                        Text("Help refugee families in Indonesia by doonating items forr Ramadan.")
                             .frame(width: deviceWidth-50)
                     }
                 }
