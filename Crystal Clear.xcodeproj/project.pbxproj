@@ -16,7 +16,6 @@
 		109D0A9A2A8DCD71009CAA7C /* orgProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109D0A992A8DCD71009CAA7C /* orgProfile.swift */; };
 		109D0A9C2A8DD448009CAA7C /* learn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109D0A9B2A8DD448009CAA7C /* learn.swift */; };
 		10ED238B2A8BFAD600DE9BF9 /* signInVolunteer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10ED238A2A8BFAD600DE9BF9 /* signInVolunteer.swift */; };
-		4F09AF0E2A8D0EEF002C8F3D /* signInOrganization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F09AF0D2A8D0EEF002C8F3D /* signInOrganization.swift */; };
 		4F09AF102A8D1283002C8F3D /* topics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F09AF0F2A8D1283002C8F3D /* topics.swift */; };
 		4F09AF122A8D1298002C8F3D /* editOrganization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F09AF112A8D1298002C8F3D /* editOrganization.swift */; };
 		4F09AF142A8D26CB002C8F3D /* orgLanding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F09AF132A8D26CB002C8F3D /* orgLanding.swift */; };
@@ -38,7 +37,6 @@
 		109D0A992A8DCD71009CAA7C /* orgProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = orgProfile.swift; sourceTree = "<group>"; };
 		109D0A9B2A8DD448009CAA7C /* learn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = learn.swift; sourceTree = "<group>"; };
 		10ED238A2A8BFAD600DE9BF9 /* signInVolunteer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signInVolunteer.swift; sourceTree = "<group>"; };
-		4F09AF0D2A8D0EEF002C8F3D /* signInOrganization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signInOrganization.swift; sourceTree = "<group>"; };
 		4F09AF0F2A8D1283002C8F3D /* topics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = topics.swift; sourceTree = "<group>"; };
 		4F09AF112A8D1298002C8F3D /* editOrganization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = editOrganization.swift; sourceTree = "<group>"; };
 		4F09AF132A8D26CB002C8F3D /* orgLanding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = orgLanding.swift; sourceTree = "<group>"; };
@@ -82,7 +80,6 @@
 			children = (
 				100E70632A8BE8C600D4570B /* Crystal_ClearApp.swift */,
 				100E70652A8BE8C600D4570B /* ContentView.swift */,
-				4F09AF0D2A8D0EEF002C8F3D /* signInOrganization.swift */,
 				10ED238A2A8BFAD600DE9BF9 /* signInVolunteer.swift */,
 				4F09AF112A8D1298002C8F3D /* editOrganization.swift */,
 				4F09AF132A8D26CB002C8F3D /* orgLanding.swift */,
@@ -189,7 +186,6 @@
 				4F09AF162A8D48C0002C8F3D /* makeProject.swift in Sources */,
 				4F09AF122A8D1298002C8F3D /* editOrganization.swift in Sources */,
 				4F09AF1A2A8E59DE002C8F3D /* ProjectItem.swift in Sources */,
-				4F09AF0E2A8D0EEF002C8F3D /* signInOrganization.swift in Sources */,
 				100E70702A8BE8CC00D4570B /* Crystal_Clear.xcdatamodeld in Sources */,
 				109D0A9A2A8DCD71009CAA7C /* orgProfile.swift in Sources */,
 				10ED238B2A8BFAD600DE9BF9 /* signInVolunteer.swift in Sources */,

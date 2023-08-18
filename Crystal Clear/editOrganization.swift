@@ -21,7 +21,7 @@ struct editOrganization: View {
             ZStack{
                 Image("bkg")
                     .clipShape(Circle())
-                    .frame(width:130, height:130)
+                    .frame(width:120, height:120)
                     .padding()
             
                 PhotosPicker("+", selection: $avatarItem, matching: .images)
@@ -47,25 +47,25 @@ struct editOrganization: View {
                 }
             }
             
-            VStack {                
-                TextField("Nonprofit Name", text: $viewModel.orgInfo.motto)
+            VStack {
+                TextField("Nonprofit Name", text: $viewModel.orgInfo.nonName)
                     .multilineTextAlignment(.center)
                     .font(.body)
                     .frame(width: 300.0, height: 40.0)
                     .border(Color.mint, width: 3)
-                    .padding()
+                    .padding(.vertical, 10.0)
                 TextField("EIN Number", text: $viewModel.orgInfo.taxNumberEIN)
                     .multilineTextAlignment(.center)
                     .font(.body)
                     .frame(width: 300.0, height: 40.0)
                     .border(Color.mint, width: 3)
-                    .padding()
+                    .padding(.vertical, 10.0)
                 TextField("Email Address", text: $viewModel.orgInfo.emailAddressOrganization)
                     .multilineTextAlignment(.center)
                     .font(.body)
                     .frame(width: 300.0, height: 40.0)
                     .border(Color.mint, width: 3)
-                    .padding()
+                    .padding(.vertical, 10.0)
 
             }
             
@@ -74,13 +74,13 @@ struct editOrganization: View {
                 .font(.body)
                 .frame(width: 300.0, height: 40.0)
                 .border(Color.mint, width: 3)
-                .padding()
+                .padding(.vertical, 10.0)
             TextField("Motto", text: $viewModel.orgInfo.motto)
                 .multilineTextAlignment(.center)
                 .font(.body)
                 .frame(width: 300.0, height: 40.0)
                 .border(Color.mint, width: 3)
-                .padding()
+                .padding(.vertical, 10.0)
                 
             HStack
             {
@@ -95,8 +95,9 @@ struct editOrganization: View {
             NavigationLink(destination: makeProject())
             {
                 Text("Add Project +")
-                    .font(.largeTitle)
-                    .padding()
+                    .font(.title)
+                    .padding(.all, 10.0)
+                    .frame(width: 300.0)
                     .background(.mint)
                     .foregroundColor(.white)
                     .cornerRadius(10)
@@ -105,8 +106,9 @@ struct editOrganization: View {
             NavigationLink(destination: orgProfile(viewModel: OrganizationInfoViewModel(), orgInfo:viewModel.orgInfo))
             {
                 Text("Finish")
-                    .font(.largeTitle)
-                    .padding()
+                    .font(.title)
+                    .padding(.all, 10.0)
+                    .frame(width: 300.0)
                     .background(.mint)
                     .foregroundColor(.white)
                     .cornerRadius(10)

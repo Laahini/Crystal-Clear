@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct makeProject: View {
+    var deviceWidth: CGFloat {
+        UIScreen.main.bounds.width
+    }
     @State private var projectName = ""
     @State var items: [ProjectItem] = []
     @State private var showNewProject = false
@@ -39,6 +42,38 @@ struct makeProject: View {
             
             if showNewProject {
                 NewProjectItemView(title: "", items: $items, showNewProject: $showNewProject)
+            }
+        }
+        VStack {
+            ZStack {
+                //Rectangle()
+                HStack(alignment: .bottom, spacing:20) {
+//                    NavigationLink(destination: editOrganization())
+//                    {
+//                        VStack {
+//                            Image(systemName: "phone.fill")
+//                            Text("Profile")
+//
+//                        }.font(.headline).frame(width: (deviceWidth/2) - 50)
+//                            .padding(.all, 10.0)
+//                            .background(.mint)
+//                            .foregroundColor(.white)
+//                            .cornerRadius(10)
+//                    }
+                    NavigationLink(destination: projectDashboard())
+                    {
+                        VStack {
+                            Image(systemName: "phone.fill")
+                            Text("Projects")
+                                
+                        }.font(.headline).frame(width: (deviceWidth/2) - 50)
+                            .padding(.all, 10.0)
+                            .background(.mint)
+                            .foregroundColor(.white)
+                            .cornerRadius(10)
+                    }
+                    
+                }
             }
         }
     }

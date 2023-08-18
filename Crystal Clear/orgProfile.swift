@@ -10,11 +10,14 @@ import SwiftUI
 struct orgProfile: View {
     @ObservedObject var viewModel: OrganizationInfoViewModel
     var orgInfo: OrganizationInfo
+    var deviceWidth: CGFloat {
+        UIScreen.main.bounds.width
+    }
     var body: some View {
         
         VStack
         {
-            Text("\(orgInfo.motto)").font(.largeTitle)
+            Text("\(orgInfo.nonName)").font(.largeTitle)
             Image("bkg").clipShape(Circle()).frame(width:130, height:130).padding()
             ZStack
             {
@@ -41,6 +44,38 @@ struct orgProfile: View {
                     .background(.mint)
                     .foregroundColor(.white)
                     .cornerRadius(10)
+            }
+        }
+        Spacer()
+            .frame(height: 100.0)
+        ZStack {
+            //Rectangle()
+            HStack(alignment: .bottom, spacing:20) {
+                NavigationLink(destination: makeProject())
+                {
+                    VStack {
+                        Image(systemName: "phone.fill")
+                        Text("New Project")
+                            
+                    }.font(.headline).frame(width: (deviceWidth/2) - 50)
+                        .padding(.all, 10.0)
+                        .background(.mint)
+                        .foregroundColor(.white)
+                        .cornerRadius(10)
+                }
+                NavigationLink(destination: projectDashboard())
+                {
+                    VStack {
+                        Image(systemName: "phone.fill")
+                        Text("Projects")
+                            
+                    }.font(.headline).frame(width: (deviceWidth/2) - 50)
+                        .padding(.all, 10.0)
+                        .background(.mint)
+                        .foregroundColor(.white)
+                        .cornerRadius(10)
+                }
+                
             }
         }
         
